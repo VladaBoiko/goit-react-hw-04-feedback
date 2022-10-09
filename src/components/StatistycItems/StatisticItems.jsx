@@ -2,20 +2,20 @@ import React from 'react';
 import { Item, Box } from './StatisticItems.styled';
 import PropTypes from 'prop-types';
 
-export const StatisticItems = ({ state, total, feedback }) => {
+export const StatisticItems = ({ good, neutral, bad, total, feedback }) => {
   return (
     <Box>
       <Item>
-        good:<span>{state.good}</span>
+        good:<span>{good}</span>
       </Item>
       <Item>
-        neutral:<span>{state.neutral}</span>
+        neutral:<span>{neutral}</span>
       </Item>
       <Item>
-        bad:<span>{state.bad}</span>
+        bad:<span>{bad}</span>
       </Item>
       <Item>
-        Total:<span>{total()}</span>
+        Total:<span>{total}</span>
       </Item>
       <Item>
         Positive feedback:

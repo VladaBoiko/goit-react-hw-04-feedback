@@ -19,6 +19,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     </Box>
   );
 };
+
 function chooseMethod(option, onLeaveFeedback) {
   if (option === 'good') {
     return onLeaveFeedback[0];
